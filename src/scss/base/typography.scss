@@ -1,0 +1,35 @@
+/* このファイルは、タイポグラフィに関するスタイルを定義します。 */
+
+$font-family-base: Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$font-family-heading: Georgia, serif;
+$font-weight-bold: bold;
+$margin-bottom-base: 1rem;
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  font-weight: $font-weight-bold;
+  margin-bottom: $margin-bottom-base;
+}
+
+$heading-sizes: (
+  h1: 2.5rem,
+  h2: 2rem,
+);
+
+@each $heading, $size in $heading-sizes {
+  #{$heading} {
+    font-size: $size;
+  }
+}
+
+p {
+  margin-bottom: $margin-bottom-base;
+}
