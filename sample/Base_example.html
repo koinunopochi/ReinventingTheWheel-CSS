@@ -164,7 +164,9 @@
     <h2>Modals</h2>
 
     <!-- 最初のモーダルを開くボタン -->
+    <!-- modalの位置で閉じず、先頭に戻ってしまうため、次のようにする -->
     <a href="#modal1" class="btn btn-primary">Open Small Modal</a>
+    <a href="#modal1-hidden" hidden>Open Small Modal</a>
 
     <!-- 2つ目のモーダルを開くボタン -->
     <a href="#modal2" class="btn btn-secondary">Open Large Modal</a>
@@ -174,18 +176,18 @@
 
     <!-- 最初のモーダル（小さいサイズ） -->
     <div class="modal modal-sm" id="modal1">
-      <a href="#" class="modal-background"></a>
+      <a href="#modal1-hidden" class="modal-background"></a>
       <div class="modal-content">
         <div class="modal-header">
           <h2 class="modal-title">Small Modal</h2>
-          <a href="#" class="modal-close">&times;</a>
+          <a href="#modal1-hidden" class="modal-close">&times;</a>
         </div>
         <div class="modal-body">
           <p>This is a small modal.</p>
         </div>
         <div class="modal-footer">
-          <a href="#" class="btn btn-secondary btn-sm m-1">Close</a>
-          <a href="#" class="btn btn-primary btn-sm">Save changes</a>
+          <a href="#modal1-hidden" class="btn btn-secondary btn-sm m-1">Close</a>
+          <a href="#modal1-hidden" class="btn btn-primary btn-sm">Save changes</a>
         </div>
       </div>
     </div>
