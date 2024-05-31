@@ -1,6 +1,5 @@
-/* typography.css */
+@charset "UTF-8";
 /* このファイルは、タイポグラフィに関するスタイルを定義します。 */
-
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -24,3 +23,5 @@ h2 {
 p {
   margin-bottom: 1rem;
 }
+
+/*# sourceMappingURL=typography.css.map */
