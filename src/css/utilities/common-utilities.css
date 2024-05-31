@@ -1,62 +1,122 @@
-/* common-utilities.css /
-/ このファイルは、共通のユーティリティクラスを定義します。 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/* Margins */
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  color: #212529;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .m-1 {
   margin: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
 }
 
 .m-2 {
   margin: 1rem;
 }
 
-.m-3 {
-  margin: 1.5rem;
-}
-
-/* Paddings */
-.p-1 {
-  padding: 0.5rem;
-}
-
 .p-2 {
   padding: 1rem;
+}
+
+.m-3 {
+  margin: 1.5rem;
 }
 
 .p-3 {
   padding: 1.5rem;
 }
 
-/* Responsive Margins */
+/* Responsive Margins and Paddings */
 @media (min-width: 768px) {
   .m-md-1 {
     margin: 0.5rem;
   }
-
-  .m-md-2 {
-    margin: 1rem;
-  }
-
-  .m-md-3 {
-    margin: 1.5rem;
-  }
-}
-
-/* Responsive Paddings */
-@media (min-width: 768px) {
   .p-md-1 {
     padding: 0.5rem;
   }
-
+  .m-md-2 {
+    margin: 1rem;
+  }
   .p-md-2 {
     padding: 1rem;
   }
-
+  .m-md-3 {
+    margin: 1.5rem;
+  }
   .p-md-3 {
     padding: 1.5rem;
   }
 }
-
 /* Width */
 .w-full {
   width: 100%;
@@ -116,6 +176,7 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
 .overflow-auto {
   overflow: auto;
 }
@@ -129,9 +190,11 @@
 .text-left {
   text-align: left;
 }
+
 .text-center {
   text-align: center;
 }
+
 .text-right {
   text-align: right;
 }
@@ -140,6 +203,7 @@
 .font-normal {
   font-weight: 400;
 }
+
 .font-bold {
   font-weight: 700;
 }
@@ -148,18 +212,23 @@
 .text-xs {
   font-size: 0.75rem;
 }
+
 .text-sm {
   font-size: 0.875rem;
 }
+
 .text-base {
   font-size: 1rem;
 }
+
 .text-lg {
   font-size: 1.125rem;
 }
+
 .text-xl {
   font-size: 1.25rem;
 }
+
 .text-2xl {
   font-size: 1.5rem;
 }
@@ -168,9 +237,11 @@
 .block {
   display: block;
 }
+
 .inline-block {
   display: inline-block;
 }
+
 .inline {
   display: inline;
 }
@@ -179,12 +250,15 @@
 .align-baseline {
   vertical-align: baseline;
 }
+
 .align-top {
   vertical-align: top;
 }
+
 .align-middle {
   vertical-align: middle;
 }
+
 .align-bottom {
   vertical-align: bottom;
 }
@@ -193,12 +267,15 @@
 .rounded {
   border-radius: 0.25rem;
 }
+
 .rounded-md {
   border-radius: 0.375rem;
 }
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -207,26 +284,30 @@
 .opacity-0 {
   opacity: 0;
 }
+
 .opacity-25 {
   opacity: 0.25;
 }
+
 .opacity-50 {
   opacity: 0.5;
 }
+
 .opacity-75 {
   opacity: 0.75;
 }
+
 .opacity-100 {
   opacity: 1;
 }
 
-/* color */
+/* Background Colors */
 .bg-primary {
-  background-color: var(--primary-color);
+  background-color: #007bff;
 }
 
 .bg-secondary {
-  background-color: var(--secondary-color);
+  background-color: #6c757d;
 }
 
 .bg-success {
@@ -260,3 +341,5 @@
 .bg-transparent {
   background-color: transparent;
 }
+
+/*# sourceMappingURL=common-utilities.css.map */

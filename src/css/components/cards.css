@@ -1,4 +1,3 @@
-/* cards.css */
 .card {
   position: relative;
   display: flex;
@@ -14,8 +13,8 @@
 
 .card-img-top {
   width: 100%;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: subtract(0.25rem, 1px);
+  border-top-right-radius: subtract(0.25rem, 1px);
 }
 
 .card-body {
@@ -54,18 +53,15 @@
   display: flex;
   flex-direction: column;
 }
-
 .card-deck .card {
   margin-bottom: 15px;
 }
-
 @media (min-width: 576px) {
   .card-deck {
     flex-flow: row wrap;
     margin-right: -15px;
     margin-left: -15px;
   }
-
   .card-deck .card {
     display: flex;
     flex: 1 0 0%;
@@ -75,3 +71,5 @@
     margin-left: 15px;
   }
 }
+
+/*# sourceMappingURL=cards.css.map */

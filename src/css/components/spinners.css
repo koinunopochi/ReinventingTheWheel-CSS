@@ -1,93 +1,17 @@
-/* spinner.css */
-.spinner {
-  width: 40px;
-  height: 40px;
-  border-width: 5px;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 18 |   'primary': $primary-color,
+ *    |              ^^^^^^^^^^^^^^
+ *    '
+ *   src\scss\components\spinners.scss 18:14  root stylesheet */
 
-.spinner-primary {
-  border: 5px solid var(--primary-color);
-  border-top-color: transparent;
-}
-
-.spinner-secondary {
-  border: 5px solid var(--secondary-color);
-  border-top-color: transparent;
-}
-
-.spinner-success {
-  border: 5px solid #28a745;
-  border-top-color: transparent;
-}
-
-.spinner-danger {
-  border: 5px solid #dc3545;
-  border-top-color: transparent;
-}
-
-.spinner-warning {
-  border: 5px solid #ffc107;
-  border-top-color: transparent;
-}
-
-.spinner-info {
-  border: 5px solid #17a2b8;
-  border-top-color: transparent;
-}
-
-.spinner-light {
-  border: 5px solid #f8f9fa;
-  border-top-color: transparent;
-}
-
-.spinner-dark {
-  border: 5px solid #343a40;
-  border-top-color: transparent;
-}
-
-.spinner-sm {
-  width: 20px;
-  height: 20px;
-  border-width: 3px;
-}
-
-.spinner-lg {
-  width: 60px;
-  height: 60px;
-  border-width: 6px;
-}
-
-.spinner-square {
-  border-radius: 0;
-}
-
-.spinner-double {
-  position: relative;
-}
-
-.spinner-double::after {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 100%;
-  height: 100%;
-  border: 5px solid rgba(0, 0, 0, 0.1);
-  border-top-color: transparent;
-  border-radius: 50%;
-  animation: spin 2s linear infinite;
-  margin: 10px;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 18 \2502    'primary': $primary-color,\d\a    \2502               ^^^^^^^^^^^^^^\a    \2575 \a   src\\scss\\components\\spinners.scss 18:14  root stylesheet";
 }
