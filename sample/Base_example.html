@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Framework Components Example</title>
+  <link rel="stylesheet" href="../src/base-theme.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>CSS Framework Components Example</h1>
+
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary Button</button>
+
+    <h2>Form</h2>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-control">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <h2>Card</h2>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">This is a sample card with some text content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <!-- spinner -->
+    <div class="spinner"></div><br>
+
+    <!-- 最初のモーダルを開くボタン -->
+    <a href="#modal1" class="btn">Open Modal 1</a>
+
+    <!-- 2つ目のモーダルを開くボタン -->
+    <a href="#modal2" class="btn">Open Modal 2</a>
+
+    <!-- 最初のモーダル -->
+    <div class="modal" id="modal1">
+      <a href="#" class="modal-background"></a>
+      <div class="modal-content">
+        <h2 class="text-cyber-blue">Modal 1 Title</h2>
+        <p class="text-cyber-green">Modal 1 content goes here.</p>
+        <a href="#" class="modal-close">&times;</a>
+      </div>
+    </div>
+
+    <!-- 2つ目のモーダル -->
+    <div class="modal" id="modal2">
+      <a href="#" class="modal-background"></a>
+      <div class="modal-content">
+        <h2 class="text-cyber-blue">Modal 2 Title</h2>
+        <p class="text-cyber-green">Modal 2 content goes here.</p>
+        <a href="#" class="modal-close">&times;</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
