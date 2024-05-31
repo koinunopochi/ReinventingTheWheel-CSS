@@ -1,3 +1,10 @@
+@import "../../base/reset.css";
+@import "../../base/typography.css";
+@import "../../layout/layout.css";
+
+@import "../../components/modals.css";
+@import "./components/modals.css";
+
 :root {
   --bg-color: #1c1c1c;
   --text-color: #00ff7f;
