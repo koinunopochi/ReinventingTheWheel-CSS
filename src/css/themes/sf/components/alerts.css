@@ -1,0 +1,102 @@
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.alert a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: inherit;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.alert a:hover {
+  opacity: 1;
+}
+
+.alert-primary {
+  color: #99caff;
+  background-color: #00254d;
+  border-color: #007bff;
+}
+.alert-primary a {
+  color: #cce5ff;
+}
+
+.alert-secondary {
+  color: #bcc1c6;
+  background-color: #191b1d;
+  border-color: #6c757d;
+}
+.alert-secondary a {
+  color: #d8dbdd;
+}
+
+.alert-success {
+  color: #86e29b;
+  background-color: #06170a;
+  border-color: #28a745;
+}
+.alert-success a {
+  color: #afecbd;
+}
+
+.alert-danger {
+  color: #f3b7bd;
+  background-color: #510e14;
+  border-color: #dc3545;
+}
+.alert-danger a {
+  color: #fae3e5;
+}
+
+.alert-warning {
+  color: #ffe7a0;
+  background-color: #543f00;
+  border-color: #ffc107;
+}
+.alert-warning a {
+  color: #fff4d3;
+}
+
+.alert-info {
+  color: #7adeee;
+  background-color: #031619;
+  border-color: #17a2b8;
+}
+.alert-info a {
+  color: #a7e9f4;
+}
+
+.alert-light {
+  color: white;
+  background-color: #90a0b0;
+  border-color: #f8f9fa;
+}
+.alert-light a {
+  color: white;
+}
+
+.alert-dark {
+  color: #7a8793;
+  background-color: black;
+  border-color: #343a40;
+}
+.alert-dark a {
+  color: #96a0aa;
+}
+
+.alert-icon {
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=alerts.css.map */

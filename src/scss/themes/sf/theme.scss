@@ -1,5 +1,6 @@
 // ベーステーマをインポート
 @import "../../base/variables";
+@import "./utils/common.scss";
 
 // SFテーマの基本的な色とスタイルを上書き
 $primary-color: #00ff9f;
@@ -26,6 +27,38 @@ $color-link-hover: #dd2ddd;
 $spacing-small: 0.5rem;
 $spacing-medium: 1rem;
 $spacing-large: 2rem;
+
+@import "../../components/alerts-variables.scss";
+
+// アラートの基本スタイル
+$alert-padding: 1.5rem;
+$alert-margin-bottom: 2rem;
+$alert-border-width: 2px;
+$alert-border-style: solid;
+$alert-border-color: $primary-color;
+$alert-border-radius: 0;
+
+// アラートのリンクスタイル
+$alert-link-font-weight: 700;
+$alert-link-text-decoration: none;
+
+// アラートのアイコンスタイル
+$alert-icon-margin-right: 1rem;
+
+// アラートの色バリエーション
+$alert-primary-color: #00ff9f;
+$alert-secondary-color: #ff00ff;
+$alert-success-color: #00ff00;
+$alert-danger-color: #ff0000;
+$alert-warning-color: #ffff00;
+$alert-info-color: #00ffff;
+$alert-light-color: #f0f0f0;
+$alert-dark-color: #0f0f0f;
+
+// アラートの背景色と文字色の調整
+$alert-bg-lightness: 10%;
+$alert-text-darken: 0%;
+$alert-link-darken: 20%;
 
 @import "../../components/modals-variables";
 

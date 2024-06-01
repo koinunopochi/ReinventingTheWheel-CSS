@@ -1,0 +1,32 @@
+// alerts-variables.scss
+@import "../base/variables";
+
+// アラートの基本スタイル
+$alert-padding: 1rem;
+$alert-margin-bottom: 1rem;
+$alert-border-width: 1px;
+$alert-border-style: solid;
+$alert-border-color: transparent;
+$alert-border-radius: $border-radius;
+
+// アラートのリンクスタイル
+$alert-link-font-weight: 700;
+$alert-link-text-decoration: underline;
+
+// アラートのアイコンスタイル
+$alert-icon-margin-right: 0.5rem;
+
+// アラートの色バリエーション
+$alert-primary-color: $primary-color;
+$alert-secondary-color: $secondary-color;
+$alert-success-color: $success-color;
+$alert-danger-color: $danger-color;
+$alert-warning-color: $warning-color;
+$alert-info-color: $info-color;
+$alert-light-color: $light-color;
+$alert-dark-color: $dark-color;
+
+// アラートの背景色と文字色の調整
+$alert-bg-lightness: 35%;
+$alert-text-darken: 30%;
+$alert-link-darken: 40%;
