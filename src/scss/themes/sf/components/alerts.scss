@@ -1,24 +1,30 @@
-// alerts.scss
-@import './alerts-variables.scss';
+// themes/sf/components/alerts.scss
+@import '../../../components/alerts-variables.scss';
 
-// アラートの基本スタイルを定義
 .alert {
   padding: $alert-padding;
   margin-bottom: $alert-margin-bottom;
   border: $alert-border-width $alert-border-style $alert-border-color;
   border-radius: $alert-border-radius;
-  // 要素は上下中央に配置
   display: flex;
   align-items: center;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
 
-  // アラートのリンクスタイルを定義
   a {
     font-weight: $alert-link-font-weight;
     text-decoration: $alert-link-text-decoration;
+    color: $alert-secondary-color;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
-// アラートの色バリエーションを定義
 $alert-colors: (
   'primary': $alert-primary-color,
   'secondary': $alert-secondary-color,
@@ -30,23 +36,21 @@ $alert-colors: (
   'dark': $alert-dark-color,
 );
 
-// 各色のアラートスタイルを生成
 @each $color, $value in $alert-colors {
   .alert-#{$color} {
-    color: darken($value, $alert-text-darken);
-    background-color: lighten($value, $alert-bg-lightness);
+    color: lighten($value, $alert-text-darken);
+    background-color: darken($value, $alert-bg-lightness);
+    border-color: $value;
 
-    // アラート内のリンクの色を設定
     a {
-      color: darken($value, $alert-link-darken);
+      color: lighten($value, $alert-link-darken);
     }
   }
 }
 
-// アラートのアイコンスタイルを定義
 .alert-icon {
   margin-right: $alert-icon-margin-right;
-  // アイコンを上下中央に配置
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
 }

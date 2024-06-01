@@ -9,8 +9,21 @@ $warning-color: #ffc107 !default;
 $info-color: #17a2b8 !default;
 $light-color: #f8f9fa !default;
 $dark-color: #343a40 !default;
+$black-color: #000000 !default;
+$white-color: #ffffff !default;
 
-$font-family-base: 'Helvetica Neue', Arial, sans-serif !default;
-$font-size-base: 16px !default;
+// $font-family-base: 'Helvetica Neue', Arial, sans-serif !default;
+// $font-size-base: 16px !default;
 
 $border-radius: 0.25rem !default;
+
+$font-family: 'Arial', sans-serif !default;
+$font-size-base: 16px !default;
+$line-height-base: 1.5 !default;
+$color-text: #212529 !default;
+$color-background: #fff !default;
+$color-link: $primary-color !default;
+$color-link-hover: #0056b3 !default;
+$spacing-small: 0.5rem !default;
+$spacing-medium: 1rem !default;
+$spacing-large: 2rem !default;

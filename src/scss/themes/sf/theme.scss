@@ -1,5 +1,6 @@
 // ベーステーマをインポート
 @import "../../base/variables";
+@import "./utils/common.scss";
 
 // SFテーマの基本的な色とスタイルを上書き
 $primary-color: #00ff9f;
@@ -10,11 +11,70 @@ $warning-color: #ffff00;
 $info-color: #00ffff;
 $light-color: #f0f0f0;
 $dark-color: #0f0f0f;
-
-$font-family-base: 'Roboto', sans-serif;
-$font-size-base: 16px;
+$black-color: #000000;
+$white-color: #ffffff;
 
 $border-radius: 0;
+
+$font-family: 'Roboto', sans-serif;
+$font-size-base: 16px;
+
+$line-height-base: 1.5;
+$color-text: $primary-color;
+$color-background: $black-color;
+$color-link: $secondary-color;
+$color-link-hover: #dd2ddd;
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem;
+$spacing-large: 2rem;
+
+@import "../../components/alerts-variables.scss";
+
+// アラートの基本スタイル
+$alert-padding: 1.5rem;
+$alert-margin-bottom: 2rem;
+$alert-border-width: 2px;
+$alert-border-style: solid;
+$alert-border-color: $primary-color;
+$alert-border-radius: 0;
+
+// アラートのリンクスタイル
+$alert-link-font-weight: 700;
+$alert-link-text-decoration: none;
+
+// アラートのアイコンスタイル
+$alert-icon-margin-right: 1rem;
+
+// アラートの色バリエーション
+$alert-primary-color: #00ff9f;
+$alert-secondary-color: #ff00ff;
+$alert-success-color: #00ff00;
+$alert-danger-color: #ff0000;
+$alert-warning-color: #ffff00;
+$alert-info-color: #00ffff;
+$alert-light-color: #f0f0f0;
+$alert-dark-color: #0f0f0f;
+
+// アラートの背景色と文字色の調整
+$alert-bg-lightness: 10%;
+$alert-text-darken: 0%;
+// $alert-link-darken: 40%;
+
+@import "../../components/modals-variables";
+
+// // モーダル用の変数を定義
+$modal-bg-color: rgba(0, 0, 0, 0.8);
+$modal-content-bg-color: #0f1116;
+$modal-content-shadow-color: rgba(0, 255, 159, 0.3);
+$modal-close-color: #00ff9f;
+$modal-header-bg-color: #1a1c23;
+$modal-footer-bg-color: #1a1c23;
+$modal-padding: 2rem;
+$modal-border-radius: 0;
+$modal-box-shadow: 0 0.5rem 1rem $modal-content-shadow-color;
+$modal-max-width: 90%;
+$modal-max-height: 90%;
+
 
 // ベーステーマをインポート
 @import "../../base-theme";
@@ -24,5 +84,8 @@ $border-radius: 0;
 @import "../../components/buttons";
 @import "../../components/cards";
 @import "../../components/forms";
-@import "../../components/modals";
 @import "../../components/spinners";
+
+// modalsコンポーネントをインポート
+@import "../../components/modals";
+@import "./components/modals";
