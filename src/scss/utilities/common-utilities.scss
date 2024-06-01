@@ -1,4 +1,4 @@
-@import "../base/base";
+@import "../base/variables";
 
 $spacer: 1rem;
 $spacers: (
@@ -172,13 +172,14 @@ $opacities: (
 $bg-colors: (
   "primary": $primary-color,
   "secondary": $secondary-color,
-  "success": #28a745,
-  "danger": #dc3545,
-  "warning": #ffc107,
-  "info": #17a2b8,
-  "light": #f8f9fa,
-  "dark": #343a40,
-  "white": #fff,
+  "success": $success-color,
+  "danger": $danger-color,
+  "warning": $warning-color,
+  "info": $info-color,
+  "light": $light-color,
+  "dark": $dark-color,
+  "black": $black-color,
+  "white": $white-color,
   "transparent": transparent
 );
 
