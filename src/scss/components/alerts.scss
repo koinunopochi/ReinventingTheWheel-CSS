@@ -1,0 +1,52 @@
+// alerts.scss
+@import '../base/base';
+
+// アラートの基本スタイルを定義
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  // 要素は上下中央に配置
+  display: flex;
+  align-items: center;
+
+  // アラートのリンクスタイルを定義
+  a {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+// アラートの色バリエーションを定義
+$alert-colors: (
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'success': $success-color,
+  'danger': $danger-color,
+  'warning': $warning-color,
+  'info': $info-color,
+  'light': $light-color,
+  'dark': $dark-color,
+);
+
+// 各色のアラートスタイルを生成
+@each $color, $value in $alert-colors {
+  .alert-#{$color} {
+    color: darken($value, 30%);
+    background-color: lighten($value, 35%);
+
+    // アラート内のリンクの色を設定
+    a {
+      color: darken($value, 40%);
+    }
+  }
+}
+
+// アラートのアイコンスタイルを定義
+.alert-icon {
+  margin-right: 0.5rem;
+  // アイコンを上下中央に配置
+  display: flex;
+  align-items: center;
+}
