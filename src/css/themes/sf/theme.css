@@ -127,23 +127,23 @@ optgroup {
 }
 
 html {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
 body {
   margin: 0;
-  color: #212529;
-  background-color: #fff;
+  color: #00ff9f;
+  background-color: #000000;
 }
 
 a {
-  color: #00ff9f;
+  color: #ff00ff;
   text-decoration: none;
 }
 a:hover {
-  color: #0056b3;
+  color: #dd2ddd;
   text-decoration: underline;
 }
 
@@ -232,23 +232,23 @@ p {
 }
 
 html {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
 body {
   margin: 0;
-  color: #212529;
-  background-color: #fff;
+  color: #00ff9f;
+  background-color: #000000;
 }
 
 a {
-  color: #00ff9f;
+  color: #ff00ff;
   text-decoration: none;
 }
 a:hover {
-  color: #0056b3;
+  color: #dd2ddd;
   text-decoration: underline;
 }
 
@@ -661,7 +661,7 @@ img {
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0;
   display: flex;
   align-items: center;
 }
@@ -752,7 +752,7 @@ img {
   cursor: pointer;
   user-select: none;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .btn:hover {
@@ -924,14 +924,14 @@ img {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0.3rem;
+  border-radius: 0;
 }
 
 .btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: 0;
 }
 
 .btn-block {
@@ -948,14 +948,14 @@ img {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0;
   margin-bottom: 1rem;
 }
 
 .card-img-top {
   width: 100%;
-  border-top-left-radius: subtract(0.25rem, 1px);
-  border-top-right-radius: subtract(0.25rem, 1px);
+  border-top-left-radius: subtract(0, 1px);
+  border-top-right-radius: subtract(0, 1px);
 }
 
 .card-body {
@@ -1032,7 +1032,7 @@ img {
   color: #495057;
   background-color: #fff;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .form-control:focus {
@@ -1108,7 +1108,7 @@ img {
 .modal-content {
   background-color: #fff;
   padding: 2rem;
-  border-radius: 0.25rem;
+  border-radius: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   max-width: 90%;
   max-height: 90%;
@@ -1265,7 +1265,7 @@ img {
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0;
   display: flex;
   align-items: center;
 }
@@ -1356,7 +1356,7 @@ img {
   cursor: pointer;
   user-select: none;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .btn:hover {
@@ -1528,14 +1528,14 @@ img {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0.3rem;
+  border-radius: 0;
 }
 
 .btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: 0;
 }
 
 .btn-block {
@@ -1552,14 +1552,14 @@ img {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0;
   margin-bottom: 1rem;
 }
 
 .card-img-top {
   width: 100%;
-  border-top-left-radius: subtract(0.25rem, 1px);
-  border-top-right-radius: subtract(0.25rem, 1px);
+  border-top-left-radius: subtract(0, 1px);
+  border-top-right-radius: subtract(0, 1px);
 }
 
 .card-body {
@@ -1636,7 +1636,7 @@ img {
   color: #495057;
   background-color: #fff;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .form-control:focus {
@@ -1712,7 +1712,7 @@ img {
 .modal-content {
   background-color: #fff;
   padding: 2rem;
-  border-radius: 0.25rem;
+  border-radius: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   max-width: 90%;
   max-height: 90%;

@@ -10,11 +10,23 @@ $warning-color: #ffff00;
 $info-color: #00ffff;
 $light-color: #f0f0f0;
 $dark-color: #0f0f0f;
-
-$font-family-base: 'Roboto', sans-serif;
-$font-size-base: 16px;
+$black-color: #000000;
+$white-color: #ffffff;
 
 $border-radius: 0;
+
+$font-family: 'Roboto', sans-serif;
+$font-size-base: 16px;
+
+$line-height-base: 1.5;
+$color-text: $primary-color;
+$color-background: $black-color;
+$color-link: $secondary-color;
+$color-link-hover: #dd2ddd;
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem;
+$spacing-large: 2rem;
+
 
 // ベーステーマをインポート
 @import "../../base-theme";

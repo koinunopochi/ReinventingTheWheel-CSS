@@ -8,7 +8,7 @@ $input-color: #495057;
 $input-bg: #fff;
 $input-border-color: #ced4da;
 $input-border-width: 1px;
-$input-border-radius: 0.25rem;
+$input-border-radius: $border-radius;
 $input-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 $input-focus-color: #495057;
 $input-focus-bg: #fff;
