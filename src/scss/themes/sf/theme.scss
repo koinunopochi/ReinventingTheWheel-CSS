@@ -27,6 +27,21 @@ $spacing-small: 0.5rem;
 $spacing-medium: 1rem;
 $spacing-large: 2rem;
 
+@import "../../components/modals-variables";
+
+// // モーダル用の変数を定義
+$modal-bg-color: rgba(0, 0, 0, 0.8);
+$modal-content-bg-color: #0f1116;
+$modal-content-shadow-color: rgba(0, 255, 159, 0.3);
+$modal-close-color: #00ff9f;
+$modal-header-bg-color: #1a1c23;
+$modal-footer-bg-color: #1a1c23;
+$modal-padding: 2rem;
+$modal-border-radius: 0;
+$modal-box-shadow: 0 0.5rem 1rem $modal-content-shadow-color;
+$modal-max-width: 90%;
+$modal-max-height: 90%;
+
 
 // ベーステーマをインポート
 @import "../../base-theme";
@@ -36,5 +51,8 @@ $spacing-large: 2rem;
 @import "../../components/buttons";
 @import "../../components/cards";
 @import "../../components/forms";
-@import "../../components/modals";
 @import "../../components/spinners";
+
+// modalsコンポーネントをインポート
+@import "../../components/modals";
+@import "./components/modals";

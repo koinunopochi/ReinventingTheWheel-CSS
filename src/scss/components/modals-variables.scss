@@ -1,0 +1,13 @@
+@import "../base/variables";
+
+$modal-bg-color: rgba(0, 0, 0, 0.6) !default;
+$modal-content-bg-color: #fff !default;
+$modal-content-shadow-color: rgba(0, 0, 0, 0.2) !default;
+$modal-close-color: #000 !default;
+$modal-header-bg-color: #f8f9fa !default;
+$modal-footer-bg-color: #f8f9fa !default;
+$modal-padding: 2rem !default;
+$modal-border-radius: $border-radius !default;
+$modal-box-shadow: 0 0.5rem 1rem $modal-content-shadow-color !default;
+$modal-max-width: 90% !default;
+$modal-max-height: 90% !default;
