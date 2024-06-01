@@ -1,0 +1,52 @@
+@import "../base/base";
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+$flex-positions: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between
+);
+
+@each $position, $value in $flex-positions {
+  .justify-#{$position} {
+    justify-content: $value;
+  }
+
+  .items-#{$position} {
+    align-items: $value;
+  }
+}
+
+/* Responsive Flex */
+@media (min-width: 768px) {
+  .flex-md-row {
+    flex-direction: row;
+  }
+
+  .flex-md-col {
+    flex-direction: column;
+  }
+
+  @each $position, $value in $flex-positions {
+    .justify-md-#{$position} {
+      justify-content: $value;
+    }
+
+    .items-md-#{$position} {
+      align-items: $value;
+    }
+  }
+}

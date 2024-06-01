@@ -1,0 +1,651 @@
+@charset "UTF-8";
+/* このファイルは、ブラウザ間のスタイルの不整合を解消するためのリセットCSSです。 */
+/* Reset all elements */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Reset HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Reset body */
+body {
+  line-height: 1;
+}
+
+/* Reset list styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Reset blockquote and quote */
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* Reset table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset anchor */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Reset form elements */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  box-sizing: content-box;
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/* このファイルは、タイポグラフィに関するスタイルを定義します。 */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  color: #212529;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-between {
+  align-items: space-between;
+}
+
+/* Responsive Flex */
+@media (min-width: 768px) {
+  .flex-md-row {
+    flex-direction: row;
+  }
+  .flex-md-col {
+    flex-direction: column;
+  }
+  .justify-md-start {
+    justify-content: flex-start;
+  }
+  .items-md-start {
+    align-items: flex-start;
+  }
+  .justify-md-end {
+    justify-content: flex-end;
+  }
+  .items-md-end {
+    align-items: flex-end;
+  }
+  .justify-md-center {
+    justify-content: center;
+  }
+  .items-md-center {
+    align-items: center;
+  }
+  .justify-md-between {
+    justify-content: space-between;
+  }
+  .items-md-between {
+    align-items: space-between;
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal:target {
+  display: flex;
+}
+
+.modal-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-close:hover {
+  color: #555;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.modal-sm .modal-content {
+  width: 300px;
+}
+
+.modal-lg .modal-content {
+  width: 800px;
+}
+
+.modal-xl .modal-content {
+  width: 1140px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  color: #212529;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-content {
+  border: 2px solid #007bff;
+}
+
+/* Basic typography */
+body {
+  background-color: #1c1c1c;
+  color: #00ff7f;
+  font-size: 16px;
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  color: #00ffff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Anchor */
+a {
+  color: #ff00ff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+}
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff00ff;
+  visibility: visible;
+  transform: scaleX(1);
+}
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ffff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Buttons */
+button {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  color: #000;
+  background-color: #ff69b4;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #ff00ff;
+}
+
+/* Forms */
+input,
+textarea,
+select {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #00ff00;
+  background-color: #1c1c1c;
+  border: 1px solid #00ffff;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff00ff;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #00ffff;
+}
+
+th {
+  background-color: #000;
+  color: #00ffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+  border: 2px solid #00ffff;
+}
+
+/* cyber-utils */
+/* Text Colors */
+.text-cyber-green {
+  color: #00ff7f;
+}
+
+.text-cyber-blue {
+  color: #00ffff;
+}
+
+.text-cyber-pink {
+  color: #ff69b4;
+}
+
+/* Background Colors */
+.bg-cyber-green {
+  background-color: #00ff7f;
+}
+
+.bg-cyber-blue {
+  background-color: #00ffff;
+}
+
+.bg-cyber-pink {
+  background-color: #ff69b4;
+}
+
+.bg-cyber-black {
+  background-color: #1c1c1c;
+}
+
+/* Borders */
+.border-neon {
+  border: 2px solid #00ffff;
+}
+
+.border-neon-thick {
+  border: 4px solid #00ffff;
+}
+
+/* Buttons */
+.btn {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  color: #1c1c1c;
+  background-color: #00ffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #ff69b4;
+}
+
+/*# sourceMappingURL=theme.css.map */

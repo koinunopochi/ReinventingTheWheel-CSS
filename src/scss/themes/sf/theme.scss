@@ -1,0 +1,218 @@
+@import "../../base/reset";
+@import "../../base/typography";
+@import "../../layout/layout";
+
+@import "../../components/modals";
+@import "./components/modals";
+
+$bg-color: #1c1c1c;
+$text-color: #00ff7f;
+$accent-color: #ff69b4;
+$primary-color: #00ffff;
+$secondary-color: #ff00ff;
+$font-size-base: 16px;
+$font-family-base: 'Orbitron', sans-serif;
+$heading-color: $primary-color;
+$link-color: $secondary-color;
+$link-hover-color: $primary-color;
+$button-text-color: #000;
+$form-bg-color: $bg-color;
+$form-text-color: #00ff00;
+$form-border-color: $primary-color;
+$form-focus-border-color: $secondary-color;
+$table-border-color: $primary-color;
+$table-heading-bg-color: #000;
+$table-heading-text-color: $primary-color;
+$img-border-color: $primary-color;
+
+$cyber-green: #00ff7f;
+$cyber-blue: #00ffff;
+$cyber-pink: #ff69b4;
+$cyber-black: #1c1c1c;
+
+/* Basic typography */
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: $heading-color;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Anchor */
+a {
+  color: $link-color;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $link-color;
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $link-hover-color;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
+
+/* Buttons */
+button {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: $button-text-color;
+  background-color: $accent-color;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $link-color;
+  }
+}
+
+/* Forms */
+input,
+textarea,
+select {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: $form-text-color;
+  background-color: $form-bg-color;
+  border: 1px solid $form-border-color;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: $form-focus-border-color;
+  }
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid $table-border-color;
+}
+
+th {
+  background-color: $table-heading-bg-color;
+  color: $table-heading-text-color;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+  border: 2px solid $img-border-color;
+}
+
+/* cyber-utils */
+/* Text Colors */
+.text-cyber-green {
+  color: $cyber-green;
+}
+
+.text-cyber-blue {
+  color: $cyber-blue;
+}
+
+.text-cyber-pink {
+  color: $cyber-pink;
+}
+
+/* Background Colors */
+.bg-cyber-green {
+  background-color: $cyber-green;
+}
+
+.bg-cyber-blue {
+  background-color: $cyber-blue;
+}
+
+.bg-cyber-pink {
+  background-color: $cyber-pink;
+}
+
+.bg-cyber-black {
+  background-color: $cyber-black;
+}
+
+/* Borders */
+.border-neon {
+  border: 2px solid $cyber-blue;
+}
+
+.border-neon-thick {
+  border: 4px solid $cyber-blue;
+}
+
+/* Buttons */
+.btn {
+  font-family: $font-family-base;
+  font-weight: bold;
+  color: $cyber-black;
+  background-color: $cyber-blue;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $cyber-pink;
+  }
+}

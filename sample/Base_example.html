@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Framework Components Example</title>
+  <link rel="stylesheet" href="../src/css/base-theme.css">
+</head>
+
+<body>
+  <div class="container p-3 ">
+    <h1>CSS Framework Components Example</h1>
+
+    <!--############################## Buttons ##############################-->
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary Button</button>
+    <button class="btn btn-success">Success Button</button>
+    <button class="btn btn-danger">Danger Button</button>
+    <button class="btn btn-warning">Warning Button</button>
+    <button class="btn btn-info">Info Button</button>
+    <button class="btn btn-light">Light Button</button>
+    <button class="btn btn-dark">Dark Button</button>
+
+
+    <h3>Outline Buttons</h3>
+    <div class="bg-dark p-2">
+      <button class="btn btn-outline-primary">Outline Primary</button>
+      <button class="btn btn-outline-secondary">Outline Secondary</button>
+      <button class="btn btn-outline-success">Outline Success</button>
+      <button class="btn btn-outline-danger">Outline Danger</button>
+      <button class="btn btn-outline-warning">Outline Warning</button>
+      <button class="btn btn-outline-info">Outline Info</button>
+      <button class="btn btn-outline-light">Outline Light</button>
+      <button class="btn btn-outline-dark">Outline Dark</button>
+    </div>
+
+    <h3>Button Sizes</h3>
+    <button class="btn btn-primary btn-lg">Large Button</button>
+    <button class="btn btn-primary">Default Button</button>
+    <button class="btn btn-primary btn-sm">Small Button</button>
+
+    <h3>Block Level Button</h3>
+    <button class="btn btn-primary btn-block">Block Level Button</button>
+
+    <!--############################## Buttons ##############################-->
+
+
+    <!--############################## Forms ##############################-->
+    <h2>Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter your password">
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message:</label>
+        <textarea id="message" class="form-control" rows="3" placeholder="Enter your message"></textarea>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="terms" class="form-check-input">
+        <label for="terms" class="form-check-label">I agree to the terms and conditions</label>
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col">
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </div>
+    </form>
+    <!--############################## Forms ##############################-->
+
+    <!--############################## Cards ##############################-->
+    <h2>Cards</h2>
+    <div class="card-deck">
+      <div class="card">
+        <img src="http://placehold.jp/300x200.png" class="card-img-top" alt="Card image">
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">This is a sample card with some text content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">This is another sample card with some text content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer">
+          Footer content
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body bg-light">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">This is a sample card with some text content.</p>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+          </ul>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+
+    <!--############################## Cards ##############################-->
+
+    <!-- ############################## spinner ############################## -->
+    <h2>Spinners</h2>
+    <h3>Spinner Colors</h3>
+    <div class="spinner spinner-primary"></div>
+    <div class="spinner spinner-secondary"></div>
+    <div class="spinner spinner-success"></div>
+    <div class="spinner spinner-danger"></div>
+    <div class="spinner spinner-warning"></div>
+    <div class="spinner spinner-info"></div>
+    <div class="spinner spinner-light"></div>
+    <div class="spinner spinner-dark"></div>
+
+    <!-- Spinner Sizes -->
+    <h3>Spinner Sizes</h3>
+    <div class="spinner spinner-primary spinner-sm"></div>
+    <div class="spinner spinner-secondary"></div>
+    <div class="spinner spinner-success spinner-lg"></div>
+
+    <!-- Spinner Shapes -->
+    <h3>Spinner Shapes</h3>
+    <div class="spinner spinner-primary"></div>
+    <div class="spinner spinner-primary spinner-square"></div>
+
+    <!-- Double Spinner -->
+    <h3>Double Spinner</h3>
+    <div class="spinner spinner-primary spinner-double"></div>
+
+    <!-- Spinner Combinations -->
+    <h3>Spinner Combinations</h3>
+    <div class="spinner spinner-primary spinner-sm  spinner-double"></div>
+    <div class="spinner spinner-secondary spinner-double"></div>
+    <div class="spinner spinner-success spinner-lg spinner-double"></div>
+
+    <!-- ############################## spinner ############################## -->
+
+    <!-- ############################## Modals ############################## -->
+    <h2>Modals</h2>
+
+    <!-- 最初のモーダルを開くボタン -->
+    <!-- modalの位置で閉じず、先頭に戻ってしまうため、次のようにする -->
+    <a href="#modal1" class="btn btn-primary">Open Small Modal</a>
+    <a href="#modal1-hidden" hidden>Open Small Modal</a>
+
+    <!-- 2つ目のモーダルを開くボタン -->
+    <a href="#modal2" class="btn btn-secondary">Open Large Modal</a>
+
+    <!-- 3つ目のモーダルを開くボタン -->
+    <a href="#modal3" class="btn btn-info">Open Extra Large Modal</a>
+
+    <!-- 最初のモーダル（小さいサイズ） -->
+    <div class="modal modal-sm" id="modal1">
+      <a href="#modal1-hidden" class="modal-background"></a>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Small Modal</h2>
+          <a href="#modal1-hidden" class="modal-close">&times;</a>
+        </div>
+        <div class="modal-body">
+          <p>This is a small modal.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#modal1-hidden" class="btn btn-secondary btn-sm m-1">Close</a>
+          <a href="#modal1-hidden" class="btn btn-primary btn-sm">Save changes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2つ目のモーダル（大きいサイズ） -->
+    <div class="modal modal-lg" id="modal2">
+      <a href="#" class="modal-background"></a>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Large Modal</h2>
+          <a href="#" class="modal-close">&times;</a>
+        </div>
+        <div class="modal-body">
+          <p>This is a large modal.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-secondary m-1">Close</a>
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3つ目のモーダル（特大サイズ） -->
+    <div class="modal modal-xl" id="modal3">
+      <a href="#" class="modal-background"></a>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Extra Large Modal</h2>
+          <a href="#" class="modal-close">&times;</a>
+        </div>
+        <div class="modal-body">
+          <p>This is an extra large modal.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-secondary m-1">Close</a>
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ############################## Modals ############################## -->
+
+    <footer>
+      <p>&copy; hogehoge</p>
+    </footer>
+  </div>
+</body>
+
+</html>
