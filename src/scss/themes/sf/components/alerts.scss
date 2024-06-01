@@ -1,5 +1,5 @@
 // themes/sf/components/alerts.scss
-@import "../../../components/alerts-variables.scss";
+@import '../../../components/alerts-variables.scss';
 
 .alert {
   padding: $alert-padding;
@@ -15,7 +15,7 @@
   a {
     font-weight: $alert-link-font-weight;
     text-decoration: $alert-link-text-decoration;
-    color: inherit;
+    color: $alert-secondary-color;
     opacity: 0.7;
     transition: opacity 0.2s;
 

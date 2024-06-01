@@ -12,7 +12,7 @@
 .alert a {
   font-weight: 700;
   text-decoration: underline;
-  color: inherit;
+  color: #6c757d;
   opacity: 0.7;
   transition: opacity 0.2s;
 }
@@ -26,7 +26,7 @@
   border-color: #007bff;
 }
 .alert-primary a {
-  color: #cce5ff;
+  color: #3395ff;
 }
 
 .alert-secondary {
@@ -35,7 +35,7 @@
   border-color: #6c757d;
 }
 .alert-secondary a {
-  color: #d8dbdd;
+  color: #868e96;
 }
 
 .alert-success {
@@ -44,7 +44,7 @@
   border-color: #28a745;
 }
 .alert-success a {
-  color: #afecbd;
+  color: #34ce57;
 }
 
 .alert-danger {
@@ -53,7 +53,7 @@
   border-color: #dc3545;
 }
 .alert-danger a {
-  color: #fae3e5;
+  color: #e4606d;
 }
 
 .alert-warning {
@@ -62,7 +62,7 @@
   border-color: #ffc107;
 }
 .alert-warning a {
-  color: #fff4d3;
+  color: #ffce3a;
 }
 
 .alert-info {
@@ -71,7 +71,7 @@
   border-color: #17a2b8;
 }
 .alert-info a {
-  color: #a7e9f4;
+  color: #1fc8e3;
 }
 
 .alert-light {
@@ -89,7 +89,7 @@
   border-color: #343a40;
 }
 .alert-dark a {
-  color: #96a0aa;
+  color: #4b545c;
 }
 
 .alert-icon {

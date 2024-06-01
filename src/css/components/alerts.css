@@ -16,7 +16,7 @@
   background-color: #b3d7ff;
 }
 .alert-primary a {
-  color: #001933;
+  color: #0062cc;
 }
 
 .alert-secondary {
@@ -24,7 +24,7 @@
   background-color: #caced1;
 }
 .alert-secondary a {
-  color: #0d0f10;
+  color: #545b62;
 }
 
 .alert-success {
@@ -32,7 +32,7 @@
   background-color: #9be7ac;
 }
 .alert-success a {
-  color: #010201;
+  color: #1e7e34;
 }
 
 .alert-danger {
@@ -40,7 +40,7 @@
   background-color: #f6cdd1;
 }
 .alert-danger a {
-  color: #3b0a0f;
+  color: #bd2130;
 }
 
 .alert-warning {
@@ -48,7 +48,7 @@
   background-color: #ffeeba;
 }
 .alert-warning a {
-  color: #3a2c00;
+  color: #d39e00;
 }
 
 .alert-info {
@@ -56,7 +56,7 @@
   background-color: #90e4f1;
 }
 .alert-info a {
-  color: #000203;
+  color: #117a8b;
 }
 
 .alert-light {
@@ -64,7 +64,7 @@
   background-color: white;
 }
 .alert-light a {
-  color: #8193a5;
+  color: #dae0e5;
 }
 
 .alert-dark {
@@ -72,7 +72,7 @@
   background-color: #88939e;
 }
 .alert-dark a {
-  color: black;
+  color: #1d2124;
 }
 
 .alert-icon {

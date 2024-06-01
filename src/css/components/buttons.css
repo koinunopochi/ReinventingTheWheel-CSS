@@ -150,12 +150,16 @@
 
 .btn-outline-light {
   color: #f8f9fa;
+  color: #212529;
   border-color: #f8f9fa;
 }
 .btn-outline-light:hover {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
+  color: #fff;
+  background-color: #bec7d1;
+  border-color: #bec7d1;
 }
 
 .btn-dark {
@@ -165,6 +169,7 @@
 }
 .btn-dark:hover {
   background-color: #2a2e33;
+  background-color: #212529;
   border-color: #2a2e33;
 }
 

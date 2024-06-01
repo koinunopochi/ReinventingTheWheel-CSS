@@ -50,18 +50,31 @@ $btn-colors: (
 
     &:hover {
       background-color: scale-color($value, $lightness: -20%);
+      @if $color == 'dark' {
+        background-color: #212529;
+      }
       border-color: scale-color($value, $lightness: -20%);
     }
   }
 
   .btn-outline-#{$color} {
     color: $value;
+    @if $color =='light' {
+      color: #212529;
+    }
     border-color: $value;
 
     &:hover {
       color: if($color == 'warning' or $color == 'light', #212529, #fff);
+
       background-color: $value;
       border-color: $value;
+
+      @if $color =='light' {
+        color: #fff;
+        background-color: scale-color($value, $lightness: -20%);
+        border-color: scale-color($value, $lightness: -20%);
+      }
     }
   }
 }

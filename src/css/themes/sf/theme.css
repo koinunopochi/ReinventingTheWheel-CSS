@@ -38,6 +38,14 @@
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3);
 }
 
+.glow-light {
+  box-shadow: 0 0 10px rgba(240, 240, 240, 0.7), 0 0 20px rgba(240, 240, 240, 0.5), 0 0 30px rgba(240, 240, 240, 0.3);
+}
+
+.glow-dark {
+  box-shadow: 0 0 10px rgba(15, 15, 15, 0.7), 0 0 20px rgba(15, 15, 15, 0.5), 0 0 30px rgba(15, 15, 15, 0.3);
+}
+
 .text-glow {
   text-shadow: 0 0 10px rgba(0, 255, 159, 0.7), 0 0 20px rgba(0, 255, 159, 0.5), 0 0 30px rgba(0, 255, 159, 0.3);
 }
@@ -730,7 +738,7 @@ img {
   background-color: #b3ffe2;
 }
 .alert-primary a {
-  color: #003320;
+  color: #00cc7f;
 }
 
 .alert-secondary {
@@ -738,7 +746,7 @@ img {
   background-color: #ffb3ff;
 }
 .alert-secondary a {
-  color: #330033;
+  color: #cc00cc;
 }
 
 .alert-success {
@@ -746,7 +754,7 @@ img {
   background-color: #b3ffb3;
 }
 .alert-success a {
-  color: #003300;
+  color: #00cc00;
 }
 
 .alert-danger {
@@ -754,7 +762,7 @@ img {
   background-color: #ffb3b3;
 }
 .alert-danger a {
-  color: #330000;
+  color: #cc0000;
 }
 
 .alert-warning {
@@ -762,7 +770,7 @@ img {
   background-color: #ffffb3;
 }
 .alert-warning a {
-  color: #333300;
+  color: #cccc00;
 }
 
 .alert-info {
@@ -770,7 +778,7 @@ img {
   background-color: #b3ffff;
 }
 .alert-info a {
-  color: #003333;
+  color: #00cccc;
 }
 
 .alert-light {
@@ -778,7 +786,7 @@ img {
   background-color: white;
 }
 .alert-light a {
-  color: #8a8a8a;
+  color: #d7d7d7;
 }
 
 .alert-dark {
@@ -947,12 +955,16 @@ img {
 
 .btn-outline-light {
   color: #f0f0f0;
+  color: #212529;
   border-color: #f0f0f0;
 }
 .btn-outline-light:hover {
   color: #212529;
   background-color: #f0f0f0;
   border-color: #f0f0f0;
+  color: #fff;
+  background-color: silver;
+  border-color: silver;
 }
 
 .btn-dark {
@@ -962,6 +974,7 @@ img {
 }
 .btn-dark:hover {
   background-color: #0c0c0c;
+  background-color: #212529;
   border-color: #0c0c0c;
 }
 
@@ -1334,7 +1347,7 @@ img {
   background-color: #b3ffe2;
 }
 .alert-primary a {
-  color: #003320;
+  color: #00cc7f;
 }
 
 .alert-secondary {
@@ -1342,7 +1355,7 @@ img {
   background-color: #ffb3ff;
 }
 .alert-secondary a {
-  color: #330033;
+  color: #cc00cc;
 }
 
 .alert-success {
@@ -1350,7 +1363,7 @@ img {
   background-color: #b3ffb3;
 }
 .alert-success a {
-  color: #003300;
+  color: #00cc00;
 }
 
 .alert-danger {
@@ -1358,7 +1371,7 @@ img {
   background-color: #ffb3b3;
 }
 .alert-danger a {
-  color: #330000;
+  color: #cc0000;
 }
 
 .alert-warning {
@@ -1366,7 +1379,7 @@ img {
   background-color: #ffffb3;
 }
 .alert-warning a {
-  color: #333300;
+  color: #cccc00;
 }
 
 .alert-info {
@@ -1374,7 +1387,7 @@ img {
   background-color: #b3ffff;
 }
 .alert-info a {
-  color: #003333;
+  color: #00cccc;
 }
 
 .alert-light {
@@ -1382,7 +1395,7 @@ img {
   background-color: white;
 }
 .alert-light a {
-  color: #8a8a8a;
+  color: #d7d7d7;
 }
 
 .alert-dark {
@@ -1551,12 +1564,16 @@ img {
 
 .btn-outline-light {
   color: #f0f0f0;
+  color: #212529;
   border-color: #f0f0f0;
 }
 .btn-outline-light:hover {
   color: #212529;
   background-color: #f0f0f0;
   border-color: #f0f0f0;
+  color: #fff;
+  background-color: silver;
+  border-color: silver;
 }
 
 .btn-dark {
@@ -1566,6 +1583,7 @@ img {
 }
 .btn-dark:hover {
   background-color: #0c0c0c;
+  background-color: #212529;
   border-color: #0c0c0c;
 }
 
