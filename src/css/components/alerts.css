@@ -1,3 +1,164 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  color: #212529;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+.alert a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.alert-primary {
+  color: #003166;
+  background-color: #b3d7ff;
+}
+.alert-primary a {
+  color: #001933;
+}
+
+.alert-secondary {
+  color: #25282b;
+  background-color: #caced1;
+}
+.alert-secondary a {
+  color: #0d0f10;
+}
+
+.alert-success {
+  color: #0a2c12;
+  background-color: #9be7ac;
+}
+.alert-success a {
+  color: #010201;
+}
+
+.alert-danger {
+  color: #66121a;
+  background-color: #f6cdd1;
+}
+.alert-danger a {
+  color: #3b0a0f;
+}
+
+.alert-warning {
+  color: #6d5200;
+  background-color: #ffeeba;
+}
+.alert-warning a {
+  color: #3a2c00;
+}
+
+.alert-info {
+  color: #062a30;
+  background-color: #90e4f1;
+}
+.alert-info a {
+  color: #000203;
+}
+
+.alert-light {
+  color: #9fadba;
+  background-color: white;
+}
+.alert-light a {
+  color: #8193a5;
+}
+
+.alert-dark {
+  color: black;
+  background-color: #88939e;
+}
+.alert-dark a {
+  color: black;
+}
+
+.alert-icon {
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
 
 /*# sourceMappingURL=alerts.css.map */
