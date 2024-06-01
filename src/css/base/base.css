@@ -1,81 +1,17 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 6 | $color-link: $primary-color;
+ *   |              ^^^^^^^^^^^^^^
+ *   '
+ *   src\scss\base\base.scss 6:14  root stylesheet */
 
-html {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502  $color-link: $primary-color;\d\a   \2502               ^^^^^^^^^^^^^^\a   \2575 \a   src\\scss\\base\\base.scss 6:14  root stylesheet";
 }
-
-body {
-  margin: 0;
-  color: #212529;
-  background-color: #fff;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 32px;
-}
-
-h4 {
-  font-size: 28px;
-}
-
-h5 {
-  font-size: 24px;
-}
-
-h6 {
-  font-size: 20px;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*# sourceMappingURL=base.css.map */

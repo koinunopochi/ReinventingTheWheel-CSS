@@ -1,13 +1,21 @@
+// 変数ファイルのインポート
+@import "./base/variables";
+
+// ベースファイルのインポート
 @import "./base/reset";
 @import "./base/base";
 @import "./base/typography";
+
+// レイアウトファイルのインポート
 @import "./layout/layout";
 
+// ユーティリティファイルのインポート
 @import "./utilities/common-utilities";
 
+// コンポーネントファイルのインポート
 @import "./components/alerts";
 @import "./components/buttons";
 @import "./components/cards";
 @import "./components/forms";
-@import "./components/modals.scss";
+@import "./components/modals";
 @import "./components/spinners";
