@@ -172,7 +172,12 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -208,7 +213,8 @@ p {
   margin-bottom: 1rem;
 }
 
-ul, ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 1rem;
   padding-left: 2rem;
@@ -414,7 +420,12 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -450,7 +461,8 @@ p {
   margin-bottom: 1rem;
 }
 
-ul, ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 1rem;
   padding-left: 2rem;

@@ -1,4 +1,4 @@
-@import "../base/base";
+@import '../base/base';
 
 $btn-padding-y: 0.5rem;
 $btn-padding-x: 1rem;
@@ -7,7 +7,8 @@ $btn-font-weight: 400;
 $btn-line-height: 1.5;
 $btn-border-width: 1px;
 $btn-border-radius: 0.25rem;
-$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
 .btn {
   display: inline-block;
@@ -31,19 +32,19 @@ $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, bo
 }
 
 $btn-colors: (
-  "primary": $primary-color,
-  "secondary": $secondary-color,
-  "success": #28a745,
-  "danger": #dc3545,
-  "warning": #ffc107,
-  "info": #17a2b8,
-  "light": #f8f9fa,
-  "dark": #343a40
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'success': $success-color,
+  'danger': $danger-color,
+  'warning': $warning-color,
+  'info': $info-color,
+  'light': $light-color,
+  'dark': $dark-color,
 );
 
 @each $color, $value in $btn-colors {
   .btn-#{$color} {
-    color: if($color == "warning" or $color == "light", #212529, #fff);
+    color: if($color == 'warning' or $color == 'light', #212529, #fff);
     background-color: $value;
     border-color: $value;
 
@@ -58,7 +59,7 @@ $btn-colors: (
     border-color: $value;
 
     &:hover {
-      color: if($color == "warning" or $color == "light", #212529, #fff);
+      color: if($color == 'warning' or $color == 'light', #212529, #fff);
       background-color: $value;
       border-color: $value;
     }
@@ -66,28 +67,28 @@ $btn-colors: (
 }
 
 $btn-size: (
-  "lg": (
-    "padding-y": 0.5rem,
-    "padding-x": 1rem,
-    "font-size": 1.25rem,
-    "line-height": 1.5,
-    "border-radius": 0.3rem
+  'lg': (
+    'padding-y': 0.5rem,
+    'padding-x': 1rem,
+    'font-size': 1.25rem,
+    'line-height': 1.5,
+    'border-radius': 0.3rem,
   ),
-  "sm": (
-    "padding-y": 0.25rem,
-    "padding-x": 0.5rem,
-    "font-size": 0.875rem,
-    "line-height": 1.5,
-    "border-radius": 0.2rem
-  )
+  'sm': (
+    'padding-y': 0.25rem,
+    'padding-x': 0.5rem,
+    'font-size': 0.875rem,
+    'line-height': 1.5,
+    'border-radius': 0.2rem,
+  ),
 );
 
 @each $size, $value in $btn-size {
   .btn-#{$size} {
-    padding: map-get($value, "padding-y") map-get($value, "padding-x");
-    font-size: map-get($value, "font-size");
-    line-height: map-get($value, "line-height");
-    border-radius: map-get($value, "border-radius");
+    padding: map-get($value, 'padding-y') map-get($value, 'padding-x');
+    font-size: map-get($value, 'font-size');
+    line-height: map-get($value, 'line-height');
+    border-radius: map-get($value, 'border-radius');
   }
 }
 
