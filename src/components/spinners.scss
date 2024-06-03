@@ -1,0 +1,88 @@
+@import '../base/variables';
+
+$spinner-width: 40px;
+$spinner-height: 40px;
+$spinner-border-width: 5px;
+$spinner-border-radius: 50%;
+$spinner-animation: spin 1s linear infinite;
+
+.spinner {
+  width: $spinner-width;
+  height: $spinner-height;
+  border-width: $spinner-border-width;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: $spinner-border-radius;
+  animation: $spinner-animation;
+}
+
+$spinner-colors: (
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'success': $success-color,
+  'danger': $danger-color,
+  'warning': $warning-color,
+  'info': $info-color,
+  'light': $light-color,
+  'dark': $dark-color,
+);
+
+
+@each $color, $value in $spinner-colors {
+  .spinner-#{$color} {
+    border: $spinner-border-width solid $value;
+    border-top-color: transparent;
+  }
+}
+
+$spinner-sizes: (
+  'sm': (
+    'width': 20px,
+    'height': 20px,
+    'border-width': 3px,
+  ),
+  'lg': (
+    'width': 60px,
+    'height': 60px,
+    'border-width': 6px,
+  ),
+);
+
+@each $size, $value in $spinner-sizes {
+  .spinner-#{$size} {
+    width: map-get($value, 'width');
+    height: map-get($value, 'height');
+    border-width: map-get($value, 'border-width');
+  }
+}
+
+.spinner-square {
+  border-radius: 0;
+}
+
+.spinner-double {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: $spinner-border-width solid rgba(0, 0, 0, 0.1);
+    border-top-color: transparent;
+    border-radius: $spinner-border-radius;
+    animation: spin 2s linear infinite;
+    margin: 10px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

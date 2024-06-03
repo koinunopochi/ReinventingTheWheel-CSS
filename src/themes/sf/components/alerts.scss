@@ -1,0 +1,56 @@
+// themes/sf/components/alerts.scss
+@import '../../../components/alerts-variables.scss';
+
+.alert {
+  padding: $alert-padding;
+  margin-bottom: $alert-margin-bottom;
+  border: $alert-border-width $alert-border-style $alert-border-color;
+  border-radius: $alert-border-radius;
+  display: flex;
+  align-items: center;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+
+  a {
+    font-weight: $alert-link-font-weight;
+    text-decoration: $alert-link-text-decoration;
+    color: $alert-secondary-color;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+$alert-colors: (
+  'primary': $alert-primary-color,
+  'secondary': $alert-secondary-color,
+  'success': $alert-success-color,
+  'danger': $alert-danger-color,
+  'warning': $alert-warning-color,
+  'info': $alert-info-color,
+  'light': $alert-light-color,
+  'dark': $alert-dark-color,
+);
+
+@each $color, $value in $alert-colors {
+  .alert-#{$color} {
+    color: lighten($value, $alert-text-darken);
+    background-color: darken($value, $alert-bg-lightness);
+    border-color: $value;
+
+    a {
+      color: lighten($value, $alert-link-darken);
+    }
+  }
+}
+
+.alert-icon {
+  margin-right: $alert-icon-margin-right;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,88 @@
+$form-group-margin-bottom: 1rem;
+$label-margin-bottom: 0.5rem;
+$input-padding-y: 0.5rem;
+$input-padding-x: 0.5rem;
+$input-font-size: 1rem;
+$input-line-height: 1.6;
+$input-color: #495057;
+$input-bg: #fff;
+$input-border-color: #ced4da;
+$input-border-width: 1px;
+$input-border-radius: $border-radius;
+$input-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+$input-focus-color: #495057;
+$input-focus-bg: #fff;
+$input-focus-border-color: #80bdff;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+
+.form-group {
+  margin-bottom: $form-group-margin-bottom;
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: $label-margin-bottom;
+  font-weight: bold;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $input-font-size;
+  line-height: $input-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  transition: $input-transition;
+
+  &:focus {
+    color: $input-focus-color;
+    background-color: $input-focus-bg;
+    border-color: $input-focus-border-color;
+    outline: 0;
+    box-shadow: $input-focus-box-shadow;
+  }
+
+  &::placeholder {
+    color: #6c757d;
+    opacity: 1;
+  }
+
+  &:disabled,
+  &[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+  }
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: -1.25rem;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

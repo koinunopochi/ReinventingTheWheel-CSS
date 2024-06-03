@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SF Example</title>
+  <link rel="stylesheet" href="../dist/themes/sf/theme.css">
+</head>
+
+<body>
+  <div class="container p-3 bg-dark-stars">
+    <h1 class="text-glow">SF Example</h1>
+    <!-- ############################## Alerts ############################## -->
+    <h2 class="text-glow-info">Alerts</h2>
+    <div class="alert alert-primary glow">
+      <i class="alert-icon fas fa-info-circle"></i>
+      これは<strong>primary</strong>アラートです。 <a href="#">リンク</a>も含めることができます。
+    </div>
+
+    <div class="alert alert-secondary glow">
+      <i class="alert-icon fas fa-question-circle"></i>
+      これは<strong>secondary</strong>アラートです。 <a href="#">リンク</a>も含めることができます。
+    </div>
+
+    <div class="alert alert-success glow">
+      <i class="alert-icon fas fa-check-circle"></i>
+      これは<strong>success</strong>アラートです。 <a href="#">リンク</a>も含めることができます。
+    </div>
+
+    <div class="alert alert-danger glow-danger">
+      <i class="alert-icon fas fa-exclamation-circle">
+        <img src="./icon/dangerous.svg" alt="danger">
+      </i>
+      これは<strong>danger</strong>アラートです。 <a href="#">リンク</a>も含めることができます。
+    </div>
+
+    <div class="alert alert-warning glow-warning">
+      <i class="alert-icon fas fa-exclamation-triangle">
+        <img src="./icon/warning.svg" alt="warning">
+      </i>
+      これは<strong>warning</strong>アラートです。 <a href="#">リンク</a>も含めることができます。
+    </div>
+
+    <div class="alert alert-info glow-info">
+      <i class="alert-icon fas fa-info-circle">
+        <img src="./icon/info.svg" alt="info">
+      </i>
+      これは<strong>info</strong>アラートです。 <a href="#">リンク</a>も含めることができます。
+    </div>
+
+    <div class="alert alert-light glow-info">
+      これは<strong>light</strong>アラートです。 <a href="#">リンク</a>も含めることができます。
+    </div>
+
+    <div class="alert alert-dark glow-info">
+      これは<strong>dark</strong>アラートです。 <a href="#">リンク</a>も含めることができます。
+    </div>
+
+    <!-- ############################## Alerts ############################## -->
+
+    <!--############################## Buttons ##############################-->
+    <h2 class="text-glow-info">Buttons</h2>
+    <button class="btn btn-primary glow">Primary Button</button>
+    <button class="btn btn-secondary glow">Secondary Button</button>
+    <button class="btn btn-success glow">Success Button</button>
+    <button class="btn btn-danger glow-danger">Danger Button</button>
+    <button class="btn btn-warning glow-warning">Warning Button</button>
+    <button class="btn btn-info glow-info">Info Button</button>
+    <button class="btn btn-light glow-light">Light Button</button>
+    <button class="btn btn-dark glow-dark">Dark Button</button>
+
+
+    <h3 class="text-glow-warning">Outline Buttons</h3>
+    <div class="bg-space-dark p-2">
+      <button class="btn btn-outline-primary glow">Outline Primary</button>
+      <button class="btn btn-outline-secondary glow">Outline Secondary</button>
+      <button class="btn btn-outline-success glow">Outline Success</button>
+      <button class="btn btn-outline-danger glow-danger">Outline Danger</button>
+      <button class="btn btn-outline-warning glow-warning">Outline Warning</button>
+      <button class="btn btn-outline-info glow-info">Outline Info</button>
+      <button class="btn btn-outline-light glow-light">Outline Light</button>
+      <button class="btn btn-outline-dark glow-dark">Outline Dark</button>
+    </div>
+
+    <h3 class="text-glow-warning">Button Sizes</h3>
+    <button class="btn btn-primary btn-lg glow">Large Button</button>
+    <button class="btn btn-primary glow">Default Button</button>
+    <button class="btn btn-primary btn-sm glow">Small Button</button>
+
+    <h3 class="text-glow-warning">Block Level Button</h3>
+    <button class="btn btn-primary btn-block glow">Block Level Button</button>
+
+    <!--############################## Buttons ##############################-->
+
+
+    <!--############################## Forms ##############################-->
+    <h2 class="text-glow-info">Form</h2>
+    <form class="bg-space-light p-3 rounded">
+      <div class="form-group">
+        <label for="name" class="form-label text-glow">Name:</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label text-glow">Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label text-glow">Password:</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter your password">
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label text-glow">Message:</label>
+        <textarea id="message" class="form-control" rows="3" placeholder="Enter your message"></textarea>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="terms" class="form-check-input">
+        <label for="terms" class="form-check-label text-glow">I agree to the terms and conditions</label>
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <button type="submit" class="btn btn-primary glow">Submit</button>
+        </div>
+        <div class="col">
+          <button type="reset" class="btn btn-secondary glow">Reset</button>
+        </div>
+      </div>
+    </form>
+    <!--############################## Forms ##############################-->
+
+    <!--############################## Cards ##############################-->
+    <h2 class="text-glow-info">Cards</h2>
+    <div class="card-deck">
+      <div class="card bg-space-dark glow">
+        <img src="http://placehold.jp/300x200.png" class="card-img-top" alt="Card image">
+        <div class="card-body">
+          <h5 class="card-title text-glow">Card Title</h5>
+          <p class="card-text">This is a sample card with some text content.</p>
+          <a href="#" class="btn btn-primary glow">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card bg-space-dark glow">
+        <div class="card-header text-glow">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-glow">Card Title</h5>
+          <h6 class="card-subtitle mb-2 text-muted text-glow">Card subtitle</h6>
+          <p class="card-text">This is another sample card with some text content.</p>
+          <a href="#" class="btn btn-primary glow">Go somewhere</a>
+        </div>
+        <div class="card-footer text-glow">
+          Footer content
+        </div>
+      </div>
+      <div class="card bg-space-dark glow">
+        <div class="card-body bg-space-light">
+          <h5 class="card-title text-glow">Card Title</h5>
+          <p class="card-text">This is a sample card with some text content.</p>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-space-dark text-glow">Item 1</li>
+            <li class="list-group-item bg-space-dark text-glow">Item 2</li>
+            <li class="list-group-item bg-space-dark text-glow">Item 3</li>
+          </ul>
+          <a href="#" class="card-link text-glow">Card link</a>
+          <a href="#" class="card-link text-glow">Another link</a>
+        </div>
+      </div>
+    </div>
+
+    <!--############################## Cards ##############################-->
+
+    <!-- ############################## spinner ############################## -->
+    <h2 class="text-glow-info">Spinners</h2>
+    <h3 class="text-glow-warning">Spinner Colors</h3>
+    <div class="spinner spinner-primary glow"></div>
+    <div class="spinner spinner-secondary glow"></div>
+    <div class="spinner spinner-success glow"></div>
+    <div class="spinner spinner-danger glow-danger"></div>
+    <div class="spinner spinner-warning glow-warning"></div>
+    <div class="spinner spinner-info glow-info"></div>
+    <div class="spinner spinner-light glow"></div>
+    <div class="spinner spinner-dark glow"></div>
+
+    <!-- Spinner Sizes -->
+    <h3 class="text-glow-warning">Spinner Sizes</h3>
+    <div class="spinner spinner-primary spinner-sm glow"></div>
+    <div class="spinner spinner-secondary glow"></div>
+    <div class="spinner spinner-success spinner-lg glow"></div>
+
+    <!-- Spinner Shapes -->
+    <h3 class="text-glow-warning">Spinner Shapes</h3>
+    <div class="spinner spinner-primary glow"></div>
+    <div class="spinner spinner-primary spinner-square glow"></div>
+
+    <!-- Double Spinner -->
+    <h3 class="text-glow-warning">Double Spinner</h3>
+    <div class="spinner spinner-primary spinner-double glow"></div>
+
+    <!-- Spinner Combinations -->
+    <h3 class="text-glow-warning">Spinner Combinations</h3>
+    <div class="spinner spinner-primary spinner-sm  spinner-double glow"></div>
+    <div class="spinner spinner-secondary spinner-double glow"></div>
+    <div class="spinner spinner-success spinner-lg spinner-double glow"></div>
+
+    <!-- ############################## spinner ############################## -->
+
+    <!-- ############################## Modals ############################## -->
+    <h2 class="text-glow-info">Modals</h2>
+
+    <!-- 最初のモーダルを開くボタン -->
+    <!-- modalの位置で閉じず、先頭に戻ってしまうため、次のようにする -->
+    <a href="#modal1" class="btn btn-primary glow">Open Small Modal</a>
+    <a href="#modal1-hidden" hidden>Open Small Modal</a>
+
+    <!-- 2つ目のモーダルを開くボタン -->
+    <a href="#modal2" class="btn btn-secondary glow">Open Large Modal</a>
+
+    <!-- 3つ目のモーダルを開くボタン -->
+    <a href="#modal3" class="btn btn-info glow">Open Extra Large Modal</a>
+
+    <!-- 最初のモーダル（小さいサイズ） -->
+    <div class="modal modal-sm" id="modal1">
+      <a href="#modal1-hidden" class="modal-background"></a>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-glow-info">Small Modal</h2>
+          <a href="#modal1-hidden" class="modal-close">&times;</a>
+        </div>
+        <div class="modal-body">
+          <p>This is a small modal.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#modal1-hidden" class="btn btn-secondary btn-sm m-1 glow">Close</a>
+          <a href="#modal1-hidden" class="btn btn-primary btn-sm glow">Save changes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2つ目のモーダル（大きいサイズ） -->
+    <div class="modal modal-lg" id="modal2">
+      <a href="#" class="modal-background"></a>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-glow-info">Large Modal</h2>
+          <a href="#" class="modal-close">&times;</a>
+        </div>
+        <div class="modal-body">
+          <p>This is a large modal.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-secondary m-1 glow">Close</a>
+          <a href="#" class="btn btn-primary glow">Save changes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3つ目のモーダル（特大サイズ） -->
+    <div class="modal modal-xl" id="modal3">
+      <a href="#" class="modal-background"></a>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-glow-info">Extra Large Modal</h2>
+          <a href="#" class="modal-close">&times;</a>
+        </div>
+        <div class="modal-body">
+          <p>This is an extra large modal.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-secondary m-1 glow">Close</a>
+          <a href="#" class="btn btn-primary glow">Save changes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ############################## Modals ############################## -->
+
+    <footer>
+      <p>&copy; hogehoge</p>
+    </footer>
+  </div>
+</body>
+
+</html>
