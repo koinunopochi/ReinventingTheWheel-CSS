@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "scss": "sass --watch src/scss:src/dist"
+    "scss": "sass --watch src/:./dist"
   },
   "devDependencies": {
     "sass": "^1.77.4"
